@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("/assets/fonts/BricolageGrotesque.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("/assets/fonts/Satoshi.woff2") format("woff2");
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --background: 0.08 0.01 270;
+    --foreground: 0.96 0.01 270;
+    --card: 0.12 0.015 270;
+    --card-foreground: 0.96 0.01 270;
+    --popover: 0.14 0.015 270;
+    --popover-foreground: 0.96 0.01 270;
+    --primary: 0.54 0.22 293;
+    --primary-foreground: 0.98 0 0;
+    --secondary: 0.17 0.02 270;
+    --secondary-foreground: 0.96 0.01 270;
+    --muted: 0.16 0.01 270;
+    --muted-foreground: 0.55 0.01 270;
+    --accent: 0.8 0.14 198;
+    --accent-foreground: 0.08 0.01 270;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.22 0.015 270;
+    --input: 0.2 0.015 270;
+    --ring: 0.54 0.22 293;
+    --purple: 0.54 0.22 293;
+    --teal: 0.8 0.14 198;
+    --chart-1: 0.54 0.22 293;
+    --chart-2: 0.8 0.14 198;
+    --chart-3: 0.769 0.188 70.08;
+    --chart-4: 0.627 0.265 303.9;
+    --chart-5: 0.645 0.246 16.439;
+    --sidebar: 0.1 0.01 270;
+    --sidebar-foreground: 0.96 0.01 270;
+    --sidebar-primary: 0.54 0.22 293;
+    --sidebar-primary-foreground: 0.98 0 0;
+    --sidebar-accent: 0.16 0.015 270;
+    --sidebar-accent-foreground: 0.96 0.01 270;
+    --sidebar-border: 0.22 0.015 270;
+    --sidebar-ring: 0.54 0.22 293;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Satoshi", "General Sans", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  }
+}
